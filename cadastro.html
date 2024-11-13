@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    <title>Campanha de Doação de Sangue - Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/file-nJqRrBWViM6qBldroFOwDvBR (1).png" alt="Logo da Campanha de Doação de Sangue" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="estoque.html">Estoque</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="relatos.html">Relatos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cadastro">
+        <h2>Cadastro para Doação de Sangue🩸</h2>
+        <form id="cadastroForm">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+            
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required>
+            
+            <label for="tipoSanguineo">Tipo Sanguíneo:</label>
+            <input type="text" id="tipoSanguineo" name="tipoSanguineo" required>
+            
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" required>
+            
+            <label for="motivo">Por que está doando?</label>
+            <textarea id="motivo" name="motivo" required></textarea>
+            
+            <button type="button" onclick="gerarPDF()">Cadastrar e Baixar Ficha</button>
+        </form>
+    </section>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+<footer>
+    <div class="footer-content">
+        <p>Yummy Blood © 2024. Todos os direitos reservados.</p>
+        <p><strong>Contato:</strong> yummyblood@institulovlad.org | Telefone: (79) 99156-3635</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/wallacemaximus?igsh=NFT3czaDZ6" class="icon">Facebook</a>
+            <a href="https://www.instagram.com/wallacemaximus?igsh=NFT3czaDZ6" class="icon">Instagram</a>
+            <a href="https://www.instagram.com/wallacemaximus?igsh=NFT3czaDZ6" class="icon">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
